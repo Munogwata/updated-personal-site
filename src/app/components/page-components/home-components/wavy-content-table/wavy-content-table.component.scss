@@ -1,0 +1,13 @@
+@use "../../../../styles/universal/" as ul;
+@use "../../../../styles/page-components/home-typography.scss" as hy;
+
+.row-heading {
+  display: flex;
+}
+
+.column-row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+}

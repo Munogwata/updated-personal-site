@@ -1,0 +1,48 @@
+@use "../../../../styles/universal/" as ul;
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section {
+  width: 1025px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: fit-content;
+}
+
+.tagline-copy {
+  @include ul.headline-1;
+  margin-left: 25px;
+  width: fit-content;
+}
+
+.highlight {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 60%,
+    ul.$soft-pink 50%
+  );
+}
+
+@media (max-width: ul.$desktop) {
+  .content-section {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    height: fit-content;
+  }
+
+  .tagline-copy {
+    @include ul.headline-3;
+    line-height: 45px;
+    font-weight: ul.$bold;
+    margin-left: 63px;
+  }
+}

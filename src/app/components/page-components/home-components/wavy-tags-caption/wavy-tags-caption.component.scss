@@ -1,0 +1,8 @@
+@use "../../../../styles/universal/" as ul;
+@use "../../../../styles/page-components/copy-styles.scss" as cs;
+@use "../../../../styles/page-components/tags.scss" as ts;
+@use "../../../../styles/page-components/home-typography.scss";
+
+.tagline-content {
+  margin-left: 63px;
+}

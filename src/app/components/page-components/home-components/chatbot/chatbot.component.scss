@@ -1,0 +1,29 @@
+@use "../../../../styles/universal/" as ul;
+@use "../../../../styles/page-components/home-typography.scss" as hy;
+
+.row-bot {
+  display: flex;
+  width: 400px;
+  justify-content: flex-end;
+}
+
+.chat-circle {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: ul.$lavender;
+}
+
+.chat-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: fit-content;
+}
+
+.chatbot-wrapper {
+  display: flex;
+  flex-direction: column;
+}

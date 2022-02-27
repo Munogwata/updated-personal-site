@@ -1,0 +1,108 @@
+@use "../../../styles/universal/" as ul;
+
+mat-toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  height: fit-content;
+  background-color: ul.$deep-green;
+}
+
+mat-toolbar-row {
+  width: 1025px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: fit-content;
+  background-color: ul.$deep-green;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: ul.$bold;
+}
+
+.text-logo {
+  text-decoration: none;
+  color: ul.$neon;
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+}
+
+@mixin social-media-buttons {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 15px;
+}
+
+.row {
+  display: flex;
+  //width: 100%;
+}
+
+.gmail-icon {
+  width: 20px;
+  height: 13.85px;
+  object-fit: cover;
+}
+
+.github-icon {
+  width: 20px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.linkedin-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.social-icon-box-gmail {
+  @include social-media-buttons;
+  background-color: ul.$soft-pink;
+}
+
+.social-icon-box-gmail :hover {
+  animation: shake 0.5s;
+}
+
+.social-icon-box-github {
+  @include social-media-buttons;
+  background-color: ul.$neon;
+}
+
+.social-icon-box-github :hover {
+  animation: shake 0.5s;
+}
+
+.social-icon-box-linkedin {
+  @include social-media-buttons;
+  background-color: ul.$lavender;
+}
+.social-icon-box-linkedin :hover {
+  animation: shake 0.5s;
+}
+
+@media (max-width: ul.$desktop) {
+  mat-toolbar-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+    background-color: ul.$deep-green;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: ul.$bold;
+  }
+}

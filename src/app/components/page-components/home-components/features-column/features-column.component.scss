@@ -1,0 +1,45 @@
+@use "../../../../styles/universal/" as ul;
+
+@use "../../../../styles/page-components/home-typography.scss" as hy;
+
+.features-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-cards {
+  width: 338px;
+  height: 75px;
+  @include ul.general-box-shadow;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.block {
+  flex-direction: row;
+  width: 295;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.media-card-image-box {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-right: 7px;
+  margin-left: 15px;
+}
+
+.media-cards-image {
+  width: 40px;
+  height: 40px;
+  object-fit: fit-content;
+}

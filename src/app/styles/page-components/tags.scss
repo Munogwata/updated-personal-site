@@ -1,0 +1,50 @@
+@use "../../styles/universal/" as ul;
+
+.tag {
+  width: fit-content;
+  height: fit-content;
+  @include ul.subtitle-2;
+  background-color: ul.$soft-pink;
+  color: ul.$deep-green;
+  padding: 8px;
+  border-radius: 12px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tag-small {
+  width: fit-content;
+  height: fit-content;
+  @include ul.body-2;
+  background-color: ul.$soft-pink;
+  color: ul.$deep-green;
+  padding: 8px;
+  border-radius: 12px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tag-row {
+  display: flex;
+  //margin-left: 25px;
+}
+
+.tags-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (max-width: ul.$mobile) {
+  .tag {
+    @include ul.body-2;
+  }
+}

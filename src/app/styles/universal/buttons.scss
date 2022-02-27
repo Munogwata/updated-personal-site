@@ -1,0 +1,39 @@
+@use "../../styles/universal/colors.scss" as cs;
+@use "../../styles/universal/shadows.scss" as ss;
+@use "../../styles/universal/typography.scss" as ty;
+
+.home-button {
+  color: cs.$neon;
+  background-color: cs.$deep-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 178px;
+  height: 27px;
+  border-radius: 7px;
+  @include ss.general-box-shadow;
+  @include ty.headline-6;
+  font-weight: bold;
+}
+
+.home-circle-button {
+  width: 15px;
+  height: 15px;
+  background-color: cs.$soft-pink;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include ss.general-box-shadow;
+  margin-right: 5px;
+}
+
+.text-button {
+  @include ty.headline-5;
+  color: cs.$deep-green;
+  background-color: none;
+  border: none;
+  font-weight: bold;
+}

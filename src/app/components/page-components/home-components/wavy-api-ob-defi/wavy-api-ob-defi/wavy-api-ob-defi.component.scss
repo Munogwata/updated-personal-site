@@ -1,0 +1,11 @@
+@use "../../../../../styles/universal/" as ul;
+@use "../../../../../styles/page-components/home-typography.scss" as hy;
+@use "../../../../../components/page-components/home-components/wavy-project-cards/wavy-project-cards/wavy-project-cards.component.scss"
+  as wpc;
+
+.caption-purple {
+  color: ul.$lavender;
+  font-weight: bold;
+  line-height: 22px;
+  @include ul.headline-5;
+}

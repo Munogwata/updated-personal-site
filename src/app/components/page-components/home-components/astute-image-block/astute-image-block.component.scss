@@ -1,0 +1,36 @@
+@use "../../../../styles/universal/" as ul;
+@use "../../../../styles/page-components/home-typography.scss" as ty;
+
+.astute-image {
+  width: fit-content;
+  height: fit-content;
+}
+
+.astute-box {
+  width: fit-content;
+  height: fit-content;
+}
+
+@media (max-width: ul.$tablet) {
+  .astute-image {
+    width: 350px;
+    height: fit-content;
+    object-fit: fit-content;
+  }
+  .image-section {
+    width: fit-content;
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+  }
+
+  .space-right {
+    margin-right: 15px;
+  }
+
+  .align {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

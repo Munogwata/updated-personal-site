@@ -1,0 +1,8 @@
+@use "../../../../styles/universal/" as ul;
+@use "../../../../styles/page-components/home-typography.scss" as hy;
+
+.to-the-left-box {
+  width: 385px;
+  display: flex;
+  justify-content: flex-end;
+}

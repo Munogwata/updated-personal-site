@@ -1,0 +1,40 @@
+@use "../../../../styles/universal/" as ul;
+@use "../../../../styles/page-components/home-typography.scss" as hy;
+@use "../../../../components/page-components/home-components/wavy-project-cards/wavy-project-cards/wavy-project-cards.component.scss"
+  as ps;
+
+.project-card {
+  border: none;
+}
+
+.image-score-box {
+  width: fit-content;
+  height: fit-content;
+}
+
+.image-score {
+  width: 414px;
+  height: 565px;
+  @include ul.general-box-shadow;
+  object-fit: fit-content;
+}
+
+.column-row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+}
+
+.row-heading {
+  display: flex;
+}
+
+@media (max-width: ul.$mobile) {
+  .image-score {
+    width: 275px;
+    height: fit-content;
+    @include ul.general-box-shadow;
+    object-fit: fit-content;
+  }
+}

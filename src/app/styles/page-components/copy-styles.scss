@@ -1,0 +1,36 @@
+@use "../../styles/universal/" as ul;
+
+.text-caption {
+  color: ul.$deep-green;
+  @include ul.headline-5;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.column-header {
+  @include ul.headline-2;
+  color: ul.$black;
+  margin-bottom: 10px;
+}
+
+.column-emphasis-grey {
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+  color: ul.$owl-black;
+}
+
+.column-emphasis-black {
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+  color: ul.$black;
+}
+
+.column-content-highlight {
+  @include ul.subtitle-2;
+  font-weight: ul.$bold;
+  color: ul.$lavender;
+}
+
+.column-content {
+  @include ul.body-1;
+}

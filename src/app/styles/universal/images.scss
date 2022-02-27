@@ -1,0 +1,59 @@
+@use "../../styles/universal/shadows.scss" as ss;
+@use "../../styles/universal/media-queries.scss" as ms;
+
+.home-thumbnail {
+  width: 455px;
+  height: fit-content;
+  @include ss.general-box-shadow;
+  object-fit: cover;
+}
+
+.home-thumbnail-small {
+  width: 375px;
+  height: fit-content;
+  @include ss.general-box-shadow;
+  object-fit: cover;
+}
+
+.image-box {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.wavy-logo {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  margin-right: 10px;
+}
+
+.wavy-eye {
+  width: 57px;
+  height: 42px;
+  object-fit: fit-content;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  object-fit: fit-content;
+}
+
+@media (max-width: ms.$mobile) {
+  .home-thumbnail {
+    width: 80%;
+    height: fit-content;
+    @include ss.general-box-shadow;
+    object-fit: cover;
+  }
+
+  .image-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+}

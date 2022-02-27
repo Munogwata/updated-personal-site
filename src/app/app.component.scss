@@ -1,0 +1,7 @@
+@use "../app/styles/universal/" as ul;
+
+.main-container {
+  background-color: ul.$page-background;
+  min-height: 100%;
+  width: 100%;
+}

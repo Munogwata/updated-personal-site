@@ -1,0 +1,97 @@
+@use "../../styles/universal/" as ul;
+
+.caption {
+  @include ul.headline-6;
+  color: ul.$deep-green;
+  font-weight: ul.$bold;
+}
+
+.caption-large {
+  @include ul.headline-5;
+  color: ul.$deep-green;
+  font-weight: ul.$bold;
+}
+
+.caption-black {
+  @include ul.headline-6;
+  color: ul.$black;
+  font-weight: ul.$bold;
+}
+
+.home-body-copy {
+  @include ul.body-1;
+  color: ul.$black;
+}
+
+.column-heading {
+  @include ul.headline-2;
+  color: ul.$black;
+}
+
+.column-subheading {
+  @include ul.headline-3;
+  color: ul.$black;
+}
+
+.white-text {
+  color: ul.$white;
+}
+
+.column-subheading-small {
+  @include ul.headline-4;
+  color: ul.$black;
+  font-weight: ul.$bold;
+}
+
+.column-emphasis-grey {
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+  color: ul.$owl-black;
+}
+
+.column-emphasis-black {
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+  color: ul.$black;
+}
+
+.column-emphasis-lavender {
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+  color: ul.$lavender;
+}
+
+.column-content-highlight {
+  @include ul.subtitle-2;
+  font-weight: ul.$bold;
+  color: ul.$lavender;
+}
+
+.column-content-highlight {
+  @include ul.subtitle-2;
+  font-weight: ul.$bold;
+  color: ul.$lavender;
+  line-height: 22px;
+}
+
+.column-content-highlight-grey {
+  @include ul.subtitle-2;
+  font-weight: ul.$bold;
+  color: ul.$owl-black;
+}
+
+.column-content-highlight-black {
+  @include ul.subtitle-2;
+  font-weight: ul.$bold;
+  color: ul.$black;
+}
+
+.column-content-highlight-large {
+  @include ul.headline-5;
+  font-weight: ul.$bold;
+  color: ul.$lavender;
+}
+
+a {
+  text-decoration: none;
+}

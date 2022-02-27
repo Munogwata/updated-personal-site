@@ -1,0 +1,88 @@
+@use "../../../styles/universal/" as ul;
+@use "../../../styles/page-components/home-typography.scss" as hy;
+
+.vertical-line {
+  border-top: 3px solid ul.$deep-green;
+}
+
+.footer-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.right-footer {
+  flex-direction: column;
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-link {
+  @include ul.headline-5;
+  color: ul.$deep-green;
+  margin-left: 25px;
+}
+
+.sign-up-form {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.green-input-box {
+  display: flex;
+  width: 388px;
+  height: 45px;
+  @include ul.general-box-shadow;
+  background-color: ul.$neon;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+@media (max-width: ul.$tablet) and (min-width: ul.$mobile) {
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .right-footer {
+    margin-left: 25px;
+  }
+
+  .left-footer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+
+  .sign-up-form {
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}

@@ -1,0 +1,73 @@
+@use "../../../../../styles/universal/" as ul;
+@use "../../../../../styles/page-components/tags.scss" as ts;
+@use "../../../../../styles/page-components/home-typography.scss" as ty;
+
+.project-card {
+  width: 385px;
+  height: 402px;
+  @include ul.general-box-shadow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  border: solid 1px ul.$neon;
+}
+
+.project-image {
+  width: 335px;
+  height: 149px;
+  object-fit: fit-content;
+}
+
+.project-line-space {
+  height: 10px;
+  display: flex;
+}
+
+.project-line-space-end {
+  height: 14px;
+  display: flex;
+}
+
+.project-line-space-small {
+  height: 8px;
+  display: flex;
+}
+
+.project-block {
+  display: flex;
+  justify-content: flex-start;
+  width: 335px;
+}
+
+.project-title {
+  @include ul.card-titles;
+  color: ul.$black;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: ul.$mobile) {
+  .project-image {
+    width: 275px;
+    height: 115px;
+    object-fit: fit-content;
+  }
+
+  .project-card {
+    width: 325px;
+    height: 355px;
+  }
+
+  .project-title {
+    @include ul.headline-5;
+    color: ul.$black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .project-block {
+    width: fit-content;
+  }
+}

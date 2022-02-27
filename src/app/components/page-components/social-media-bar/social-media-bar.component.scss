@@ -1,0 +1,69 @@
+@use "../../../styles/universal/" as ul;
+
+.social-media-container {
+  display: flex;
+  margin-left: 25px;
+  flex-direction: row;
+  width: fit-content;
+}
+
+@mixin social-media-buttons {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 15px;
+}
+
+.row {
+  display: flex;
+  //width: 100%;
+}
+
+.gmail-icon {
+  width: 20px;
+  height: 13.85px;
+  object-fit: cover;
+}
+
+.github-icon {
+  width: 20px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.linkedin-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.social-icon-box-gmail {
+  @include social-media-buttons;
+  background-color: ul.$soft-pink;
+}
+
+.social-icon-box-gmail :hover {
+  animation: shake 0.5s;
+}
+
+.social-icon-box-github {
+  @include social-media-buttons;
+  background-color: ul.$neon;
+}
+
+.social-icon-box-github :hover {
+  animation: shake 0.5s;
+}
+
+.social-icon-box-linkedin {
+  @include social-media-buttons;
+  background-color: ul.$lavender;
+}
+.social-icon-box-linkedin :hover {
+  animation: shake 0.5s;
+}
