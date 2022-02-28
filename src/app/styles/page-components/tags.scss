@@ -16,6 +16,10 @@
   align-content: center;
 }
 
+.tag:hover {
+  background-color: ul.$neon;
+}
+
 .tag-small {
   width: fit-content;
   height: fit-content;
@@ -32,15 +36,21 @@
   align-content: center;
 }
 
+.tag-small:hover {
+  background-color: ul.$neon;
+}
+
 .tag-row {
   display: flex;
-  //margin-left: 25px;
+  cursor: url("../../../assets/home-page/cursor.png"), auto;
 }
+//margin-left: 25px;
 
 .tags-block {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  cursor: url("../../../assets/home-page/cursor.png"), auto;
 }
 
 @media (max-width: ul.$mobile) {

@@ -7,6 +7,15 @@
   align-items: center;
 }
 
+.circle {
+  position: fixed;
+  z-index: 1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: lavender;
+}
+
 .content-section {
   width: 1025px;
   display: flex;
@@ -14,6 +23,7 @@
   align-items: flex-start;
   align-content: flex-start;
   height: fit-content;
+  cursor: url("../../../../../assets/home-page/cursor.png"), auto;
 }
 
 .tagline-copy {
@@ -28,6 +38,10 @@
     rgba(255, 255, 255, 0) 60%,
     ul.$soft-pink 50%
   );
+}
+
+.highlight:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, ul.$neon 50%);
 }
 
 @media (max-width: ul.$desktop) {

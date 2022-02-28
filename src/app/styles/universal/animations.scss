@@ -47,3 +47,26 @@
     left: 0;
   }
 }
+
+@keyframes swing {
+  from {
+    transform: rotate(-77deg);
+    opacity: 0;
+  }
+  20% {
+    transform: rotate(45deg);
+  }
+  40% {
+    transform: rotate(-35deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}

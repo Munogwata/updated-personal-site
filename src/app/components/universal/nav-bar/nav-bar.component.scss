@@ -9,6 +9,7 @@ mat-toolbar {
   align-content: center;
   height: fit-content;
   background-color: ul.$deep-green;
+  cursor: pointer;
 }
 
 mat-toolbar-row {
@@ -22,6 +23,7 @@ mat-toolbar-row {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: ul.$bold;
+  cursor: pointer;
 }
 
 .text-logo {
@@ -29,6 +31,23 @@ mat-toolbar-row {
   color: ul.$neon;
   @include ul.headline-5;
   font-weight: ul.$bold;
+  background-image: none;
+}
+
+.hover-effect {
+  background-image: none;
+  width: fit-content;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.hover-effect :hover {
+  font-size: 0px;
+  background-image: url("../../../../assets/home-page/hover-logo.png");
+  object-fit: scale-down;
+  width: 94px;
+  height: 144px;
+  display: flex;
 }
 
 @mixin social-media-buttons {
@@ -104,5 +123,6 @@ mat-toolbar-row {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: ul.$bold;
+    background-image: none;
   }
 }

@@ -23,6 +23,7 @@ import { FeaturesColumnComponent } from './components/page-components/home-compo
 import { StackColumnComponent } from './components/page-components/home-components/stack-column/stack-column.component';
 import { FooterComponent } from './components/page-components/footer/footer.component';
 import { SocialMediaBarComponent } from './components/page-components/social-media-bar/social-media-bar.component';
+import { KnowMeImageComponent } from './components/page-components/home-components/know-me-image/know-me-image.component';
 
 
 
@@ -49,6 +50,7 @@ import { SocialMediaBarComponent } from './components/page-components/social-med
     StackColumnComponent,
     FooterComponent,
     SocialMediaBarComponent,
+    KnowMeImageComponent,
     
 
   ],

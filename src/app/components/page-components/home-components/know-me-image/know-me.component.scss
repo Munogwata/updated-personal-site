@@ -1,1 +1,155 @@
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
+.image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  background-color: lavender;
+}
+
+.spinner-box {
+  width: 375px;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+none {
+  animation: none;
+}
+
+.solar-system {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.orbit {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+
+  border-radius: 50%;
+}
+
+.orbit-middle {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid lavender;
+  border-radius: 50%;
+}
+
+.earth-orbit {
+  width: 375px;
+  height: 375px;
+  animation: spin 24s linear 0s infinite;
+}
+
+.earth-orbit-2 {
+  width: 375px;
+  height: 375px;
+  animation: spin 26s linear 0s infinite;
+}
+
+.earth-orbit-3 {
+  width: 375px;
+  height: 375px;
+  animation: spin 28s linear 0s infinite;
+}
+
+.earth-orbit-4 {
+  width: 375px;
+  height: 375px;
+  animation: spin 30s linear 0s infinite;
+}
+
+.earth-orbit-5 {
+  width: 375px;
+  height: 375px;
+  animation: spin 22s linear 0s infinite;
+}
+
+.earth-orbit-slow {
+  width: 5px;
+  height: 5px;
+  animation: none;
+}
+
+.unicorn {
+  position: absolute;
+  top: -12.5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("../../../../../assets/skill-icon/unicorn.png");
+  object-fit: contain;
+}
+
+.design-skill {
+  position: absolute;
+  top: -12.5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("../../../../../assets/skill-icon/designskill.png");
+  object-fit: contain;
+}
+
+.law {
+  position: absolute;
+  top: -12.5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("../../../../../assets/skill-icon/law.png");
+  object-fit: contain;
+}
+
+.laptop {
+  position: absolute;
+  top: -12.5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("../../../../../assets/skill-icon/laptop.png");
+  object-fit: contain;
+}
+
+.writing {
+  position: absolute;
+  top: -12.5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url("../../../../../assets/skill-icon/writing.png");
+  object-fit: contain;
+}
+
+.venus {
+  position: absolute;
+  top: -5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("../../../../../assets/skill-icon/smiling-queen.png");
+  object-fit: contain;
+  display: flex;
+}

@@ -6,3 +6,15 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.animated-image {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-image: url("../../../../../assets/skill-icon/background.png");
+  object-fit: contain;
+  width: 375px;
+  height: 375px;
+}
